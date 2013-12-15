@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="/">
+    <file>icons/Next 32x32.png</file>
+    <file>icons/next 48x48.png</file>
+    <file>icons/Previous 32x32.png</file>
+    <file>icons/previous 48x48.png</file>
+    <file>icons/user-info-icon 32x32.png</file>
+    <file>icons/user-info-icon 48x48.png</file>
+	<file>icons/search-button-green-icon 32x32.png</file>
+	<file>icons/course_icon_gre.png</file>
+  </qresource>
+</RCC>

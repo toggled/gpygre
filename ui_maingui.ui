@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>569</width>
+    <height>545</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PyGRE</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="iconresource.qrc">
+    <normaloff>:/icons/course_icon_gre.png</normaloff>:/icons/course_icon_gre.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="word_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>561</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <widget class="QLineEdit" name="wordedit">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>10</y>
+       <width>411</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Monaco</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Word</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="searchButton">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>10</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Search</string>
+     </property>
+     <property name="icon">
+      <iconset resource="iconresource.qrc">
+       <normaloff>:/icons/search-button-green-icon 32x32.png</normaloff>:/icons/search-button-green-icon 32x32.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonIconOnly</enum>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="wordlist">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>60</y>
+       <width>411</width>
+       <height>101</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="meaning_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>180</y>
+      <width>561</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <widget class="QTextEdit" name="meaningtextEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>551</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>569</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonFollowStyle</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionPervious"/>
+   <addaction name="actionNext"/>
+   <addaction name="separator"/>
+   <addaction name="actionAbout_me"/>
+  </widget>
+  <action name="actionAbout_me">
+   <property name="icon">
+    <iconset resource="iconresource.qrc">
+     <normaloff>:/icons/user-info-icon 48x48.png</normaloff>:/icons/user-info-icon 48x48.png</iconset>
+   </property>
+   <property name="text">
+    <string>About pyGRE</string>
+   </property>
+   <property name="toolTip">
+    <string>About this app</string>
+   </property>
+   <property name="statusTip">
+    <string>About this app </string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionPervious">
+   <property name="icon">
+    <iconset resource="iconresource.qrc">
+     <normaloff>:/icons/Previous 32x32.png</normaloff>:/icons/Previous 32x32.png</iconset>
+   </property>
+   <property name="text">
+    <string>pervious</string>
+   </property>
+   <property name="toolTip">
+    <string>perviously searched word</string>
+   </property>
+   <property name="statusTip">
+    <string>view words previosly searched</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Left</string>
+   </property>
+  </action>
+  <action name="actionNext">
+   <property name="icon">
+    <iconset resource="iconresource.qrc">
+     <normaloff>:/icons/next 48x48.png</normaloff>:/icons/next 48x48.png</iconset>
+   </property>
+   <property name="text">
+    <string>next</string>
+   </property>
+   <property name="toolTip">
+    <string>words searched later</string>
+   </property>
+   <property name="statusTip">
+    <string>view words later searched</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Right</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="iconresource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
